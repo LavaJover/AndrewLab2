@@ -23,8 +23,6 @@ def login_view(request):
                 return HttpResponseRedirect('/reg/')
             print(form.cleaned_data['login'])
             print(form.cleaned_data['password'])
-    else:
-        pass
 
     context = {
         'form': form,
@@ -115,13 +113,9 @@ def homework(request, hw_id):
             new_hw = HwDone(text=form.cleaned_data['content'], student=student, mark=0, hw_type=hw)
             new_hw.save()
             return HttpResponseRedirect(f'/reg/homework/{hw_id}/')
-        
-        else:
-            form = SubmitAnswer()
 
     courses = Course.objects.all()
 
-    
     context = {
         "task": hw.task,
         "deadline": hw.deadline,

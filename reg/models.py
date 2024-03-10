@@ -38,3 +38,4 @@ class HwDone(models.Model):
     mark = models.IntegerField(blank=False, verbose_name='Оценка')
 
     hw_type = models.ForeignKey(HomeworkType, on_delete=models.CASCADE)
+

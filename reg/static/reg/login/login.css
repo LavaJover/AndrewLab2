@@ -59,3 +59,12 @@
     min-width: 50px;
     border-radius: 10%;
 }
+
+.login > a > label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.login > a{
+    margin: 30px;
+}

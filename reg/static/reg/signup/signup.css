@@ -26,6 +26,8 @@
     position: absolute;
     left: 42%;
     top: 50px;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .login > div{
